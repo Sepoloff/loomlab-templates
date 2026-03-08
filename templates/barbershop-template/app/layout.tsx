@@ -5,8 +5,8 @@ import { WhatsAppButton } from '@/components/WhatsAppButton'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Premium Barbershop | Expert Grooming Services',
-  description: 'Experience premium grooming at our barbershop. Expert haircuts, beard trims, and styling services.',
+  title: 'Barbearia Premium | Serviços Especializados de Grooming',
+  description: 'Experiencie grooming premium na nossa barbearia. Cortes de cabelo, aparos de barba e serviços de styling por especialistas.',
 }
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-PT">
       <body className="bg-dark-900 text-dark-100">
         <Navbar />
         <main>{children}</main>

@@ -2,37 +2,37 @@ import { Star, Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Sarah Anderson',
-    role: 'Regular Client',
-    content: 'The most luxurious salon experience! The staff is incredibly talented and the atmosphere is so relaxing.',
+    name: 'Sara Andrade',
+    role: 'Cliente Regular',
+    content: 'A experiência de salão mais luxuosa! A equipa é incrivelmente talentosa e a atmosfera é tão relaxante.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
   },
   {
-    name: 'Jessica Martinez',
-    role: 'Bridal Client',
-    content: 'My wedding day beauty was absolutely perfect. The team made me feel confident and stunning!',
+    name: 'Jessica Martins',
+    role: 'Cliente de Noiva',
+    content: 'A minha beleza no dia do casamento ficou absolutamente perfeita. A equipa fez-me sentir confiante e deslumbrante!',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
   },
   {
     name: 'Amanda Chen',
-    role: 'Beauty Enthusiast',
-    content: 'Best nail art I\'ve ever seen. Emma\'s creativity is amazing and her attention to detail is incredible.',
+    role: 'Entusiasta de Beleza',
+    content: 'O melhor nail art que já vi. A criatividade da Emma é incrível e a atenção ao detalhe é extraordinária.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
   },
   {
-    name: 'Michelle Lee',
-    role: 'Wellness Client',
-    content: 'The spa treatments are transformative. I leave feeling completely rejuvenated every time.',
+    name: 'Michèle Leite',
+    role: 'Cliente de Bem-estar',
+    content: 'Os tratamentos de spa são transformadores. Saio sempre a sentir-me completamente renovada.',
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1517411901427-2e0b2a55b846?w=100&h=100&fit=crop',
   },
   {
-    name: 'Rachel Thompson',
-    role: 'Regular Customer',
-    content: 'Professional, friendly, and always delivers amazing results. My go-to place for all beauty needs!',
+    name: 'Raquel Thompson',
+    role: 'Cliente Regular',
+    content: 'Profissional, simpática e sempre entrega resultados incríveis. O meu sítio preferido para todas as necessidades de beleza!',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
   },
@@ -45,10 +45,10 @@ export function Testimonials() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Client Reviews
+            Avaliações de Clientes
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
-            What Our <span className="gradient-text">Clients Say</span>
+            O Que Dizem As <span className="gradient-text">Nossas Clientes</span>
           </h2>
         </div>
 

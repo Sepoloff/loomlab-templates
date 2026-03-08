@@ -4,29 +4,29 @@ import { Star } from 'lucide-react'
 const team = [
   {
     name: 'James Mitchell',
-    specialty: 'Master Barber',
-    bio: '15+ years of experience',
+    specialty: 'Barbeiro Mestre',
+    bio: 'Mais de 15 anos de experiência',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
     rating: 5,
   },
   {
     name: 'Marcus Johnson',
-    specialty: 'Hair Styling Expert',
-    bio: '10+ years specializing in modern cuts',
+    specialty: 'Especialista em Penteados',
+    bio: 'Mais de 10 anos em cortes modernos',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
     rating: 5,
   },
   {
     name: 'David Chen',
-    specialty: 'Traditional Shaving',
-    bio: 'Expert in classic grooming techniques',
+    specialty: 'Barbear Tradicional',
+    bio: 'Especialista em técnicas clássicas de grooming',
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop',
     rating: 4.8,
   },
   {
     name: 'Alex Rivera',
-    specialty: 'Color & Styling',
-    bio: 'Creative specialist in hair coloring',
+    specialty: 'Coloração & Styling',
+    bio: 'Especialista criativo em coloração capilar',
     image: 'https://images.unsplash.com/photo-1507009750519-e21cc028cb29?w=400&h=400&fit=crop',
     rating: 4.9,
   },
@@ -39,13 +39,13 @@ export function Team() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Meet The Team
+            Conheça a Equipa
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Expert <span className="gradient-text">Professionals</span>
+            Especialistas <span className="gradient-text">Profissionais</span>
           </h2>
           <p className="text-dark-300 max-w-2xl mx-auto">
-            Our skilled team is dedicated to providing you with the best grooming experience.
+            A nossa equipa qualificada está dedicada a proporcionar-lhe a melhor experiência de grooming.
           </p>
         </div>
 

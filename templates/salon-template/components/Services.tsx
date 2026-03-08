@@ -11,38 +11,38 @@ const services = [
   {
     icon: Sparkles,
     name: 'Manicure',
-    description: 'Elegant nail care and design',
-    price: '$35',
+    description: 'Cuidado e design elegante das unhas',
+    price: '35€',
   },
   {
     icon: Waves,
     name: 'Pedicure',
-    description: 'Relaxing foot care and nail art',
-    price: '$45',
+    description: 'Cuidado relaxante dos pés e nail art',
+    price: '45€',
   },
   {
     icon: Wind,
-    name: 'Hair Styling',
-    description: 'Professional haircuts and styling',
-    price: '$60',
+    name: 'Penteado',
+    description: 'Cortes e penteados profissionais',
+    price: '60€',
   },
   {
     icon: Palette,
     name: 'Nail Art',
-    description: 'Creative custom nail designs',
-    price: '$50',
+    description: 'Designs criativos e personalizados de unhas',
+    price: '50€',
   },
   {
     icon: Zap,
-    name: 'Spa Treatment',
-    description: 'Rejuvenating body and face treatments',
-    price: '$85',
+    name: 'Tratamento Spa',
+    description: 'Tratamentos rejuvenescedores de corpo e rosto',
+    price: '85€',
   },
   {
     icon: HeartHandshake,
-    name: 'Massage',
-    description: 'Therapeutic relaxation massage',
-    price: '$70',
+    name: 'Massagem',
+    description: 'Massagem terapêutica de relaxamento',
+    price: '70€',
   },
 ]
 
@@ -53,13 +53,13 @@ export function Services() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Our Services
+            Os Nossos Serviços
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
-            Premium Beauty <span className="gradient-text">Solutions</span>
+            Soluções de Beleza <span className="gradient-text">Premium</span>
           </h2>
           <p className="text-light-700 max-w-2xl mx-auto">
-            Indulge in our comprehensive range of beauty and wellness services designed to make you feel pampered and beautiful.
+            Desfrute da nossa gama completa de serviços de beleza e bem-estar pensados para a fazer sentir mimada e radiante.
           </p>
         </div>
 

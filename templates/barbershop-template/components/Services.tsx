@@ -3,33 +3,33 @@ import { Scissors, Zap, Wind, Droplet, Sparkles, Palette } from 'lucide-react'
 const services = [
   {
     icon: Scissors,
-    name: 'Haircut',
-    description: 'Professional haircuts tailored to your style and face shape',
+    name: 'Corte de Cabelo',
+    description: 'Cortes profissionais adaptados ao seu estilo e formato de rosto',
   },
   {
     icon: Zap,
-    name: 'Beard Trim',
-    description: 'Expert beard grooming and styling',
+    name: 'Aparo de Barba',
+    description: 'Cuidado e modelagem especialista de barba',
   },
   {
     icon: Wind,
-    name: 'Hair Styling',
-    description: 'Contemporary styling for any occasion',
+    name: 'Penteado',
+    description: 'Estilos contemporâneos para qualquer ocasião',
   },
   {
     icon: Droplet,
-    name: 'Hot Shave',
-    description: 'Classic hot shave with premium products',
+    name: 'Barbear Quente',
+    description: 'Barbear clássico com produtos premium',
   },
   {
     icon: Sparkles,
-    name: 'Hair Wash',
-    description: 'Relaxing wash with scalp massage',
+    name: 'Lavagem de Cabelo',
+    description: 'Lavagem relaxante com massagem ao couro cabeludo',
   },
   {
     icon: Palette,
-    name: 'Hair Coloring',
-    description: 'Professional coloring and highlights',
+    name: 'Coloração',
+    description: 'Coloração profissional e mechas',
   },
 ]
 
@@ -40,13 +40,13 @@ export function Services() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Our Services
+            Os Nossos Serviços
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Premium Grooming <span className="gradient-text">Solutions</span>
+            Soluções de Grooming <span className="gradient-text">Premium</span>
           </h2>
           <p className="text-dark-300 max-w-2xl mx-auto">
-            We offer a comprehensive range of grooming services designed to make you look and feel your best.
+            Oferecemos uma gama completa de serviços de grooming para que se sinta e pareça no seu melhor.
           </p>
         </div>
 

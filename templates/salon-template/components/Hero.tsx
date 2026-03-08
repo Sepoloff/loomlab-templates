@@ -18,22 +18,22 @@ export function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fadeIn">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-4">
-            Welcome to Elegance
+            Bem-vinda à Elegância
           </p>
           <h1 className="text-5xl md:text-7xl font-bold text-light-900 mb-6 leading-tight">
-            Beauty & <span className="gradient-text">Wellness</span>
+            Beleza & <span className="gradient-text">Bem-estar</span>
           </h1>
           <p className="text-lg md:text-xl text-light-700 max-w-2xl mx-auto mb-10">
-            Discover the ultimate luxury salon experience with our premium beauty and wellness services.
+            Descubra a experiência de salão de luxo por excelência com os nossos serviços premium de beleza e bem-estar.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="primary" size="lg">
-              <a href="#booking">Book Appointment</a>
+              <a href="#booking">Marcar Consulta</a>
             </Button>
             <Button variant="secondary" size="lg">
-              <a href="#services">Explore Services</a>
+              <a href="#services">Explorar Serviços</a>
             </Button>
           </div>
         </div>

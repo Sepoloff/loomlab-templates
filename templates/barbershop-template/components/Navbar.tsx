@@ -17,10 +17,10 @@ export function Navbar() {
   }, [isDark])
 
   const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#gallery', label: 'Gallery' },
-    { href: '#team', label: 'Team' },
-    { href: '#booking', label: 'Booking' },
+    { href: '#services', label: 'Serviços' },
+    { href: '#gallery', label: 'Galeria' },
+    { href: '#team', label: 'Equipa' },
+    { href: '#booking', label: 'Marcação' },
   ]
 
   return (
@@ -29,7 +29,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold gradient-text">
-            Barbershop
+            Barbearia Premium
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,7 +51,7 @@ export function Navbar() {
             <button
               onClick={() => setIsDark(!isDark)}
               className="p-2 rounded-lg bg-dark-800 hover:bg-dark-700 transition-colors"
-              aria-label="Toggle theme"
+              aria-label="Alternar tema"
             >
               {isDark ? (
                 <Sun className="w-5 h-5 text-gold-500" />
@@ -64,7 +64,7 @@ export function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 rounded-lg bg-dark-800 hover:bg-dark-700"
-              aria-label="Toggle menu"
+              aria-label="Abrir menu"
             >
               {isOpen ? (
                 <X className="w-5 h-5" />

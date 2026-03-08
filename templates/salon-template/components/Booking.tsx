@@ -22,10 +22,9 @@ export function Booking() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // Here you would typically send the data to a backend
+    console.log('Formulário submetido:', formData)
     alert(
-      'Appointment request submitted! We will contact you shortly to confirm.'
+      'Pedido de marcação enviado! Entraremos em contacto brevemente para confirmar.'
     )
     setFormData({
       name: '',
@@ -40,10 +39,10 @@ export function Booking() {
   const services = [
     'Manicure',
     'Pedicure',
-    'Hair Styling',
+    'Penteado',
     'Nail Art',
-    'Spa Treatment',
-    'Massage',
+    'Tratamento Spa',
+    'Massagem',
   ]
 
   const timeSlots = [
@@ -64,13 +63,13 @@ export function Booking() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Reserve Your Spot
+            Reserve o Seu Lugar
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
-            Book Your <span className="gradient-text">Appointment</span>
+            Marcar a Sua <span className="gradient-text">Consulta</span>
           </h2>
           <p className="text-light-700">
-            Schedule your perfect beauty appointment in just a few minutes.
+            Agende a sua consulta de beleza perfeita em apenas alguns minutos.
           </p>
         </div>
 
@@ -83,7 +82,7 @@ export function Booking() {
             {/* Name */}
             <div>
               <label className="block text-light-900 font-semibold mb-2">
-                Full Name
+                Nome Completo
               </label>
               <input
                 type="text"
@@ -92,7 +91,7 @@ export function Booking() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-light-50 border border-rose-100 rounded-lg text-light-900 placeholder-light-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-200 transition-colors"
-                placeholder="Sarah Anderson"
+                placeholder="Sara Andrade"
               />
             </div>
 
@@ -108,14 +107,14 @@ export function Booking() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-light-50 border border-rose-100 rounded-lg text-light-900 placeholder-light-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-200 transition-colors"
-                placeholder="sarah@example.com"
+                placeholder="sara@exemplo.com"
               />
             </div>
 
             {/* Phone */}
             <div>
               <label className="block text-light-900 font-semibold mb-2">
-                Phone Number
+                Telefone
               </label>
               <input
                 type="tel"
@@ -124,14 +123,14 @@ export function Booking() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-light-50 border border-rose-100 rounded-lg text-light-900 placeholder-light-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-200 transition-colors"
-                placeholder="+1 (555) 123-4567"
+                placeholder="+351 912 345 678"
               />
             </div>
 
             {/* Service */}
             <div>
               <label className="block text-light-900 font-semibold mb-2">
-                Service
+                Serviço
               </label>
               <select
                 name="service"
@@ -142,7 +141,7 @@ export function Booking() {
                 {services.map((service) => (
                   <option
                     key={service}
-                    value={service.toLowerCase()}
+                    value={service.toLowerCase().replace(/ /g, '-')}
                     className="bg-white"
                   >
                     {service}
@@ -154,7 +153,7 @@ export function Booking() {
             {/* Date */}
             <div>
               <label className="block text-light-900 font-semibold mb-2">
-                Preferred Date
+                Data Preferida
               </label>
               <input
                 type="date"
@@ -169,7 +168,7 @@ export function Booking() {
             {/* Time */}
             <div>
               <label className="block text-light-900 font-semibold mb-2">
-                Preferred Time
+                Horário Preferido
               </label>
               <select
                 name="time"
@@ -178,7 +177,7 @@ export function Booking() {
                 required
                 className="w-full px-4 py-3 bg-light-50 border border-rose-100 rounded-lg text-light-900 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-200 transition-colors"
               >
-                <option value="">Select time</option>
+                <option value="">Selecionar hora</option>
                 {timeSlots.map((slot) => (
                   <option key={slot} value={slot} className="bg-white">
                     {slot}
@@ -190,11 +189,11 @@ export function Booking() {
 
           {/* Submit Button */}
           <Button type="submit" variant="primary" size="lg" className="w-full">
-            Confirm Appointment
+            Confirmar Marcação
           </Button>
 
           <p className="text-center text-light-600 text-sm mt-4">
-            We will contact you within 24 hours to confirm your appointment.
+            Entraremos em contacto dentro de 24 horas para confirmar a sua marcação.
           </p>
         </form>
       </div>

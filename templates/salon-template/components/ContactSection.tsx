@@ -7,10 +7,10 @@ export function Footer() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Find Us
+            Encontre-nos
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
-            Visit Our <span className="gradient-text">Salon</span>
+            Visite o Nosso <span className="gradient-text">Salão</span>
           </h2>
         </div>
 
@@ -39,12 +39,12 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-light-900 mb-2">
-                  Address
+                  Morada
                 </h3>
                 <p className="text-light-600">
-                  456 Beauty Lane<br />
-                  New York, NY 10001<br />
-                  United States
+                  Avenida da Beleza, 456<br />
+                  Lisboa, 1000-001<br />
+                  Portugal
                 </p>
               </div>
             </div>
@@ -58,14 +58,14 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-light-900 mb-2">
-                  Phone
+                  Telefone
                 </h3>
                 <p className="text-light-600">
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+351912345678"
                     className="hover:text-rose-500 transition-colors"
                   >
-                    +1 (555) 123-4567
+                    +351 912 345 678
                   </a>
                 </p>
               </div>
@@ -84,10 +84,10 @@ export function Footer() {
                 </h3>
                 <p className="text-light-600">
                   <a
-                    href="mailto:info@salon.com"
+                    href="mailto:info@belezabemestar.pt"
                     className="hover:text-rose-500 transition-colors"
                   >
-                    info@salon.com
+                    info@belezabemestar.pt
                   </a>
                 </p>
               </div>
@@ -102,12 +102,12 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-light-900 mb-2">
-                  Hours
+                  Horário
                 </h3>
                 <div className="text-light-600 space-y-1">
-                  <p>Monday - Friday: 10:00 AM - 7:00 PM</p>
-                  <p>Saturday: 10:00 AM - 6:00 PM</p>
-                  <p>Sunday: 11:00 AM - 5:00 PM</p>
+                  <p>Segunda - Sexta: 10:00 - 19:00</p>
+                  <p>Sábado: 10:00 - 18:00</p>
+                  <p>Domingo: 11:00 - 17:00</p>
                 </div>
               </div>
             </div>
@@ -122,35 +122,35 @@ export function Footer() {
             {/* Brand */}
             <div>
               <h3 className="text-2xl font-bold gradient-text mb-4">
-                Beauty Salon
+                Beleza & Bem-estar
               </h3>
               <p className="text-light-600">
-                Premium beauty and wellness services for the modern woman.
+                Serviços premium de beleza e bem-estar para a mulher moderna.
               </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-light-900 font-semibold mb-4">Quick Links</h4>
+              <h4 className="text-light-900 font-semibold mb-4">Links Rápidos</h4>
               <ul className="space-y-2">
                 <li>
                   <a href="#services" className="text-light-600 hover:text-rose-500 transition-colors">
-                    Services
+                    Serviços
                   </a>
                 </li>
                 <li>
                   <a href="#portfolio" className="text-light-600 hover:text-rose-500 transition-colors">
-                    Portfolio
+                    Portfólio
                   </a>
                 </li>
                 <li>
                   <a href="#staff" className="text-light-600 hover:text-rose-500 transition-colors">
-                    Staff
+                    Equipa
                   </a>
                 </li>
                 <li>
                   <a href="#booking" className="text-light-600 hover:text-rose-500 transition-colors">
-                    Booking
+                    Marcação
                   </a>
                 </li>
               </ul>
@@ -159,19 +159,19 @@ export function Footer() {
             {/* Loyalty */}
             <div>
               <h4 className="text-light-900 font-semibold mb-4">
-                Loyalty Program
+                Programa de Fidelidade
               </h4>
               <ul className="space-y-2 text-light-600 text-sm">
-                <li>• Exclusive member discounts</li>
-                <li>• Birthday specials</li>
-                <li>• Early service access</li>
-                <li>• Rewards points</li>
+                <li>• Descontos exclusivos para membros</li>
+                <li>• Especiais de aniversário</li>
+                <li>• Acesso antecipado a serviços</li>
+                <li>• Pontos de recompensa</li>
               </ul>
             </div>
 
             {/* Social */}
             <div>
-              <h4 className="text-light-900 font-semibold mb-4">Follow Us</h4>
+              <h4 className="text-light-900 font-semibold mb-4">Siga-nos</h4>
               <div className="flex gap-4">
                 <a
                   href="https://facebook.com"
@@ -203,13 +203,13 @@ export function Footer() {
 
           {/* Bottom */}
           <div className="border-t border-rose-200 pt-8 flex flex-col md:flex-row justify-between items-center text-light-600 text-sm">
-            <p>&copy; 2024 Premium Beauty Salon. All rights reserved.</p>
+            <p>&copy; 2024 Beleza & Bem-estar. Todos os direitos reservados.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-rose-500 transition-colors">
-                Privacy Policy
+                Política de Privacidade
               </a>
               <a href="#" className="hover:text-rose-500 transition-colors">
-                Terms of Service
+                Termos de Serviço
               </a>
             </div>
           </div>

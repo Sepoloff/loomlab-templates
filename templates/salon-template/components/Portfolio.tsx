@@ -7,48 +7,48 @@ const portfolioImages = [
   {
     id: 1,
     src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop',
-    alt: 'Nail art design 1',
-    category: 'Nails',
+    alt: 'Design de unhas 1',
+    category: 'Unhas',
   },
   {
     id: 2,
     src: 'https://images.unsplash.com/photo-1607779591378-361bfdfaed8f?w=600&h=600&fit=crop',
-    alt: 'Nail art design 2',
-    category: 'Nails',
+    alt: 'Design de unhas 2',
+    category: 'Unhas',
   },
   {
     id: 3,
     src: 'https://images.unsplash.com/photo-1596728322284-4ec344c28735?w=600&h=600&fit=crop',
-    alt: 'Hair styling 1',
-    category: 'Hair',
+    alt: 'Penteado 1',
+    category: 'Cabelo',
   },
   {
     id: 4,
     src: 'https://images.unsplash.com/photo-1605328159405-b035a1a3e3b1?w=600&h=600&fit=crop',
-    alt: 'Hair styling 2',
-    category: 'Hair',
+    alt: 'Penteado 2',
+    category: 'Cabelo',
   },
   {
     id: 5,
     src: 'https://images.unsplash.com/photo-1596728322282-9b6b7f26d6c4?w=600&h=600&fit=crop',
-    alt: 'Before and after treatment',
-    category: 'Treatment',
+    alt: 'Antes e depois do tratamento',
+    category: 'Tratamento',
   },
   {
     id: 6,
     src: 'https://images.unsplash.com/photo-1595777707802-41d339d60280?w=600&h=600&fit=crop',
-    alt: 'Spa and wellness',
-    category: 'Wellness',
+    alt: 'Spa e bem-estar',
+    category: 'Bem-estar',
   },
 ]
 
 export function Portfolio() {
   const [selectedId, setSelectedId] = useState<number | null>(null)
-  const [filter, setFilter] = useState('All')
+  const [filter, setFilter] = useState('Todos')
 
-  const categories = ['All', 'Nails', 'Hair', 'Treatment', 'Wellness']
+  const categories = ['Todos', 'Unhas', 'Cabelo', 'Tratamento', 'Bem-estar']
   const filteredImages =
-    filter === 'All'
+    filter === 'Todos'
       ? portfolioImages
       : portfolioImages.filter((img) => img.category === filter)
 
@@ -58,13 +58,13 @@ export function Portfolio() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Our Work
+            O Nosso Trabalho
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
-            Portfolio & <span className="gradient-text">Gallery</span>
+            Portfólio & <span className="gradient-text">Galeria</span>
           </h2>
           <p className="text-light-700 max-w-2xl mx-auto">
-            Explore our latest beauty transformations and salon artistry.
+            Explore as nossas transformações de beleza e a nossa arte de salão.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export function Portfolio() {
                 <div className="absolute inset-0 bg-rose-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="bg-white text-rose-500 px-4 py-2 rounded-full font-semibold">
-                    View
+                    Ver
                   </span>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export function Portfolio() {
                   portfolioImages.find((img) => img.id === selectedId)?.src ||
                   ''
                 }
-                alt="Gallery image"
+                alt="Imagem da galeria"
                 width={600}
                 height={600}
                 className="w-full h-auto rounded-lg"

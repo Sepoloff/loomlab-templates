@@ -4,29 +4,29 @@ import { Star } from 'lucide-react'
 const staff = [
   {
     name: 'Sophia Williams',
-    specialty: 'Nail & Beauty Expert',
-    bio: '8+ years of experience in nail design',
+    specialty: 'Especialista em Unhas & Beleza',
+    bio: 'Mais de 8 anos de experiência em design de unhas',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
     rating: 5,
   },
   {
     name: 'Emma Davis',
-    specialty: 'Hair Stylist',
-    bio: 'Specializing in cuts, colors, and treatments',
+    specialty: 'Especialista em Cabelo',
+    bio: 'Especializada em cortes, coloração e tratamentos',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
     rating: 5,
   },
   {
     name: 'Olivia Martinez',
-    specialty: 'Spa & Wellness',
-    bio: 'Certified massage and spa therapist',
+    specialty: 'Spa & Bem-estar',
+    bio: 'Terapeuta certificada de massagem e spa',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
     rating: 4.9,
   },
   {
     name: 'Ava Johnson',
-    specialty: 'Beauty Consultant',
-    bio: 'Expert in skincare and beauty advice',
+    specialty: 'Consultora de Beleza',
+    bio: 'Especialista em cuidados de pele e consultoria de beleza',
     image: 'https://images.unsplash.com/photo-1517411901427-2e0b2a55b846?w=400&h=400&fit=crop',
     rating: 4.8,
   },
@@ -39,13 +39,13 @@ export function Staff() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Meet The Team
+            Conheça a Equipa
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
-            Expert Beauty <span className="gradient-text">Professionals</span>
+            Especialistas de Beleza <span className="gradient-text">Profissionais</span>
           </h2>
           <p className="text-light-700 max-w-2xl mx-auto">
-            Our talented team of beauty experts is dedicated to making you feel beautiful and confident.
+            A nossa talentosa equipa de especialistas de beleza está dedicada a fazer com que se sinta bonita e confiante.
           </p>
         </div>
 

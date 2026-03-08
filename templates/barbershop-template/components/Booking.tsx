@@ -8,7 +8,7 @@ export function Booking() {
     name: '',
     email: '',
     phone: '',
-    service: 'haircut',
+    service: 'corte-de-cabelo',
     date: '',
     time: '',
   })
@@ -22,26 +22,25 @@ export function Booking() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // Here you would typically send the data to a backend
-    alert('Booking request submitted! We will contact you shortly.')
+    console.log('Formulário submetido:', formData)
+    alert('Pedido de marcação enviado! Entraremos em contacto brevemente.')
     setFormData({
       name: '',
       email: '',
       phone: '',
-      service: 'haircut',
+      service: 'corte-de-cabelo',
       date: '',
       time: '',
     })
   }
 
   const services = [
-    'Haircut',
-    'Beard Trim',
-    'Hair Styling',
-    'Hot Shave',
-    'Hair Wash',
-    'Hair Coloring',
+    'Corte de Cabelo',
+    'Aparo de Barba',
+    'Penteado',
+    'Barbear Quente',
+    'Lavagem de Cabelo',
+    'Coloração',
   ]
 
   const timeSlots = [
@@ -61,13 +60,13 @@ export function Booking() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Reserve Your Spot
+            Reserve o Seu Lugar
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Book an <span className="gradient-text">Appointment</span>
+            Marcar uma <span className="gradient-text">Consulta</span>
           </h2>
           <p className="text-dark-300">
-            Fill out the form below and we'll confirm your booking shortly.
+            Preencha o formulário abaixo e confirmamos a sua marcação brevemente.
           </p>
         </div>
 
@@ -80,7 +79,7 @@ export function Booking() {
             {/* Name */}
             <div>
               <label className="block text-white font-semibold mb-2">
-                Full Name
+                Nome Completo
               </label>
               <input
                 type="text"
@@ -89,7 +88,7 @@ export function Booking() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-dark-800 border border-dark-700 rounded text-white focus:border-gold-500 focus:outline-none transition-colors"
-                placeholder="John Doe"
+                placeholder="João Silva"
               />
             </div>
 
@@ -105,14 +104,14 @@ export function Booking() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-dark-800 border border-dark-700 rounded text-white focus:border-gold-500 focus:outline-none transition-colors"
-                placeholder="john@example.com"
+                placeholder="joao@exemplo.com"
               />
             </div>
 
             {/* Phone */}
             <div>
               <label className="block text-white font-semibold mb-2">
-                Phone Number
+                Telefone
               </label>
               <input
                 type="tel"
@@ -121,14 +120,14 @@ export function Booking() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-dark-800 border border-dark-700 rounded text-white focus:border-gold-500 focus:outline-none transition-colors"
-                placeholder="+1 (555) 123-4567"
+                placeholder="+351 912 345 678"
               />
             </div>
 
             {/* Service */}
             <div>
               <label className="block text-white font-semibold mb-2">
-                Service
+                Serviço
               </label>
               <select
                 name="service"
@@ -139,7 +138,7 @@ export function Booking() {
                 {services.map((service) => (
                   <option
                     key={service}
-                    value={service.toLowerCase()}
+                    value={service.toLowerCase().replace(/ /g, '-')}
                     className="bg-dark-900"
                   >
                     {service}
@@ -151,7 +150,7 @@ export function Booking() {
             {/* Date */}
             <div>
               <label className="block text-white font-semibold mb-2">
-                Preferred Date
+                Data Preferida
               </label>
               <input
                 type="date"
@@ -166,7 +165,7 @@ export function Booking() {
             {/* Time */}
             <div>
               <label className="block text-white font-semibold mb-2">
-                Preferred Time
+                Horário Preferido
               </label>
               <select
                 name="time"
@@ -175,7 +174,7 @@ export function Booking() {
                 required
                 className="w-full px-4 py-3 bg-dark-800 border border-dark-700 rounded text-white focus:border-gold-500 focus:outline-none transition-colors"
               >
-                <option value="">Select time</option>
+                <option value="">Selecionar hora</option>
                 {timeSlots.map((slot) => (
                   <option key={slot} value={slot} className="bg-dark-900">
                     {slot}
@@ -187,7 +186,7 @@ export function Booking() {
 
           {/* Submit Button */}
           <Button type="submit" variant="primary" size="lg" className="w-full">
-            Confirm Booking
+            Confirmar Marcação
           </Button>
         </form>
       </div>

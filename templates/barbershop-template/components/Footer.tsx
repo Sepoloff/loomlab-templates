@@ -8,34 +8,34 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold gradient-text mb-4">Barbershop</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-4">Barbearia Premium</h3>
             <p className="text-dark-400">
-              Premium grooming services for the modern gentleman.
+              Serviços de grooming premium para o homem moderno.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-white font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#services" className="text-dark-400 hover:text-gold-500 transition-colors">
-                  Services
+                  Serviços
                 </a>
               </li>
               <li>
                 <a href="#gallery" className="text-dark-400 hover:text-gold-500 transition-colors">
-                  Gallery
+                  Galeria
                 </a>
               </li>
               <li>
                 <a href="#team" className="text-dark-400 hover:text-gold-500 transition-colors">
-                  Team
+                  Equipa
                 </a>
               </li>
               <li>
                 <a href="#booking" className="text-dark-400 hover:text-gold-500 transition-colors">
-                  Booking
+                  Marcação
                 </a>
               </li>
             </ul>
@@ -43,18 +43,18 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <h4 className="text-white font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-dark-400">
-              <li>123 Main Street</li>
-              <li>New York, NY 10001</li>
+              <li>Rua Principal, 123</li>
+              <li>Lisboa, 1000-001</li>
               <li>
-                <a href="tel:+15551234567" className="hover:text-gold-500 transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+351912345678" className="hover:text-gold-500 transition-colors">
+                  +351 912 345 678
                 </a>
               </li>
               <li>
-                <a href="mailto:info@barbershop.com" className="hover:text-gold-500 transition-colors">
-                  info@barbershop.com
+                <a href="mailto:info@barbeariapremium.pt" className="hover:text-gold-500 transition-colors">
+                  info@barbeariapremium.pt
                 </a>
               </li>
             </ul>
@@ -62,7 +62,7 @@ export function Footer() {
 
           {/* Social */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Follow Us</h4>
+            <h4 className="text-white font-semibold mb-4">Siga-nos</h4>
             <div className="flex gap-4">
               <a
                 href="https://facebook.com"
@@ -102,13 +102,13 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-dark-800 pt-8 flex flex-col md:flex-row justify-between items-center text-dark-400 text-sm">
-          <p>&copy; 2024 Premium Barbershop. All rights reserved.</p>
+          <p>&copy; 2024 Barbearia Premium. Todos os direitos reservados.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-gold-500 transition-colors">
-              Privacy Policy
+              Política de Privacidade
             </a>
             <a href="#" className="hover:text-gold-500 transition-colors">
-              Terms of Service
+              Termos de Serviço
             </a>
           </div>
         </div>

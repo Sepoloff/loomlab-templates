@@ -18,22 +18,22 @@ export function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fadeIn">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-wider mb-4">
-            Welcome to Excellence
+            Bem-vindo à Excelência
           </p>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Premium <span className="gradient-text">Grooming</span> Services
+            Serviços de <span className="gradient-text">Grooming</span> Premium
           </h1>
           <p className="text-lg md:text-xl text-dark-300 max-w-2xl mx-auto mb-10">
-            Experience the finest barbershop services with expert stylists dedicated to your perfect look.
+            Experiencie os melhores serviços de barbearia com especialistas dedicados ao seu look perfeito.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="primary" size="lg">
-              <a href="#booking">Book Now</a>
+              <a href="#booking">Marcar Agora</a>
             </Button>
             <Button variant="secondary" size="lg">
-              <a href="#services">View Services</a>
+              <a href="#services">Ver Serviços</a>
             </Button>
           </div>
         </div>

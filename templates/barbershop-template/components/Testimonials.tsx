@@ -2,30 +2,30 @@ import { Star } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'John Doe',
-    role: 'Regular Customer',
-    content: 'Best barbershop in town! The team is professional, friendly, and delivers amazing results every time.',
+    name: 'João Silva',
+    role: 'Cliente Regular',
+    content: 'A melhor barbearia da cidade! A equipa é profissional, simpática e entrega resultados incríveis todas as vezes.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
   },
   {
-    name: 'Michael Smith',
-    role: 'Business Owner',
-    content: 'I visit every month for my monthly cuts and shaves. Always leave feeling refreshed and confident.',
+    name: 'Miguel Santos',
+    role: 'Empresário',
+    content: 'Venho todos os meses para os meus cortes e barbear. Saio sempre a sentir-me renovado e confiante.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
   },
   {
-    name: 'Robert Williams',
-    role: 'Client',
-    content: 'Outstanding service! The barbers really listen to what you want and execute perfectly.',
+    name: 'Roberto Ferreira',
+    role: 'Cliente',
+    content: 'Serviço excecional! Os barbeiros ouvem realmente o que quer e executam na perfeição.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop',
   },
   {
-    name: 'James Taylor',
+    name: 'Tiago Oliveira',
     role: 'Regular',
-    content: 'Premium quality at reasonable prices. Highly recommend to anyone looking for professional grooming.',
+    content: 'Qualidade premium a preços razoáveis. Recomendo vivamente a quem procura grooming profissional.',
     rating: 4.8,
     image: 'https://images.unsplash.com/photo-1507009750519-e21cc028cb29?w=100&h=100&fit=crop',
   },
@@ -38,10 +38,10 @@ export function Testimonials() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Client Reviews
+            Avaliações de Clientes
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            What Our <span className="gradient-text">Clients Say</span>
+            O Que Dizem Os <span className="gradient-text">Nossos Clientes</span>
           </h2>
         </div>
 

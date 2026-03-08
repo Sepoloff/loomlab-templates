@@ -7,10 +7,10 @@ export function Location() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Find Us
+            Encontre-nos
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Visit Our <span className="gradient-text">Location</span>
+            Visite a Nossa <span className="gradient-text">Localização</span>
           </h2>
         </div>
 
@@ -38,11 +38,11 @@ export function Location() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2">Address</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Morada</h3>
                 <p className="text-dark-300">
-                  123 Main Street<br />
-                  New York, NY 10001<br />
-                  United States
+                  Rua Principal, 123<br />
+                  Lisboa, 1000-001<br />
+                  Portugal
                 </p>
               </div>
             </div>
@@ -55,10 +55,10 @@ export function Location() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2">Phone</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Telefone</h3>
                 <p className="text-dark-300">
-                  <a href="tel:+15551234567" className="hover:text-gold-500 transition-colors">
-                    +1 (555) 123-4567
+                  <a href="tel:+351912345678" className="hover:text-gold-500 transition-colors">
+                    +351 912 345 678
                   </a>
                 </p>
               </div>
@@ -74,8 +74,8 @@ export function Location() {
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Email</h3>
                 <p className="text-dark-300">
-                  <a href="mailto:info@barbershop.com" className="hover:text-gold-500 transition-colors">
-                    info@barbershop.com
+                  <a href="mailto:info@barbeariapremium.pt" className="hover:text-gold-500 transition-colors">
+                    info@barbeariapremium.pt
                   </a>
                 </p>
               </div>
@@ -89,11 +89,11 @@ export function Location() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2">Hours</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Horário</h3>
                 <div className="text-dark-300 space-y-1">
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 5:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <p>Segunda - Sexta: 09:00 - 18:00</p>
+                  <p>Sábado: 09:00 - 17:00</p>
+                  <p>Domingo: Fechado</p>
                 </div>
               </div>
             </div>

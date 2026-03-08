@@ -17,11 +17,11 @@ export function Navbar() {
   }, [isDark])
 
   const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#portfolio', label: 'Portfolio' },
-    { href: '#staff', label: 'Staff' },
-    { href: '#offers', label: 'Offers' },
-    { href: '#booking', label: 'Booking' },
+    { href: '#services', label: 'Serviços' },
+    { href: '#portfolio', label: 'Portfólio' },
+    { href: '#staff', label: 'Equipa' },
+    { href: '#offers', label: 'Promoções' },
+    { href: '#booking', label: 'Marcação' },
   ]
 
   return (
@@ -30,7 +30,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold gradient-text">
-            Beauty Salon
+            Beleza & Bem-estar
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,7 +52,7 @@ export function Navbar() {
             <button
               onClick={() => setIsDark(!isDark)}
               className="p-2 rounded-lg bg-rose-50 hover:bg-rose-100 transition-colors"
-              aria-label="Toggle theme"
+              aria-label="Alternar tema"
             >
               {isDark ? (
                 <Sun className="w-5 h-5 text-gold-500" />
@@ -65,7 +65,7 @@ export function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 rounded-lg bg-rose-50 hover:bg-rose-100"
-              aria-label="Toggle menu"
+              aria-label="Abrir menu"
             >
               {isOpen ? (
                 <X className="w-5 h-5" />

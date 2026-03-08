@@ -2,28 +2,28 @@ import { Zap } from 'lucide-react'
 
 const offers = [
   {
-    title: 'Summer Special',
-    description: 'Get 20% off all hair services',
-    price: 'from $48',
-    original: 'from $60',
+    title: 'Especial de Verão',
+    description: '20% de desconto em todos os serviços de cabelo',
+    price: 'a partir de 48€',
+    original: 'a partir de 60€',
   },
   {
-    title: 'Spa Package',
-    description: '3-hour luxury spa experience',
-    price: '$120',
-    original: '$160',
+    title: 'Pacote Spa',
+    description: 'Experiência de spa de luxo de 3 horas',
+    price: '120€',
+    original: '160€',
   },
   {
-    title: 'Bridal Package',
-    description: 'Complete beauty prep for the big day',
-    price: '$250',
-    original: '$350',
+    title: 'Pacote Noiva',
+    description: 'Preparação de beleza completa para o grande dia',
+    price: '250€',
+    original: '350€',
   },
   {
-    title: 'Loyalty Rewards',
-    description: 'Every 5th service is 25% off',
-    price: 'Free',
-    original: 'Usually 25%',
+    title: 'Recompensas de Fidelidade',
+    description: 'Cada 5.º serviço tem 25% de desconto',
+    price: 'Grátis',
+    original: 'Normalmente 25%',
   },
 ]
 
@@ -34,13 +34,13 @@ export function SpecialOffers() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
-            Special Promotions
+            Promoções Especiais
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
-            Exclusive <span className="gradient-text">Offers</span>
+            Ofertas <span className="gradient-text">Exclusivas</span>
           </h2>
           <p className="text-light-700 max-w-2xl mx-auto">
-            Take advantage of our special packages and promotions for ultimate beauty and wellness.
+            Aproveite os nossos pacotes e promoções especiais para o máximo de beleza e bem-estar.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export function SpecialOffers() {
                   <span className="text-2xl font-bold text-rose-600">
                     {offer.price}
                   </span>
-                  {offer.original !== 'Usually 25%' && (
+                  {offer.original !== 'Normalmente 25%' && (
                     <span className="text-sm text-light-400 line-through">
                       {offer.original}
                     </span>
@@ -80,9 +80,9 @@ export function SpecialOffers() {
                 </div>
 
                 {/* Save Badge */}
-                {offer.original !== 'Usually 25%' && (
+                {offer.original !== 'Normalmente 25%' && (
                   <div className="mt-4 inline-block bg-rose-100 text-rose-700 text-xs font-semibold px-3 py-1 rounded-full">
-                    Save{' '}
+                    Poupe{' '}
                     {Math.round(
                       ((parseInt(offer.original) -
                         parseInt(offer.price)) /
@@ -100,13 +100,13 @@ export function SpecialOffers() {
         {/* Loyalty Program Info */}
         <div className="mt-12 bg-white rounded-lg p-8 border border-rose-200 text-center">
           <h3 className="text-2xl font-bold text-light-900 mb-3">
-            Join Our Loyalty Program
+            Junte-se ao Nosso Programa de Fidelidade
           </h3>
           <p className="text-light-600 max-w-2xl mx-auto mb-6">
-            Become a valued member and enjoy exclusive discounts, early access to new services, and special birthday treats.
+            Torne-se membro e desfrute de descontos exclusivos, acesso antecipado a novos serviços e mimos especiais no seu aniversário.
           </p>
           <button className="bg-rose-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-rose-600 transition-colors">
-            Sign Up Today
+            Inscreva-se Hoje
           </button>
         </div>
       </div>
