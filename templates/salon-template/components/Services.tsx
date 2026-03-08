@@ -59,7 +59,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-rose-500 text-sm font-semibold uppercase tracking-wider mb-2">
+          <p className="text-rose-500 text-sm font-semibold uppercase tracking-widest mb-2">
             Os Nossos Serviços
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
@@ -77,10 +77,10 @@ export function Services() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-lg border border-rose-100 hover:border-rose-300 hover:shadow-lg transition-all duration-300 group overflow-hidden"
+                className="bg-white rounded-xl border border-rose-100 shadow-md hover:border-rose-300/60 hover:scale-105 hover:shadow-2xl hover:shadow-rose-500/10 transition-all duration-300 group overflow-hidden cursor-pointer"
               >
                 {/* Service Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-56 overflow-hidden rounded-t-xl">
                   <Image
                     src={service.image}
                     alt={service.name}
@@ -88,18 +88,18 @@ export function Services() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-rose-500/10 group-hover:bg-rose-500/5 transition-colors" />
+                  <div className="absolute inset-0 bg-rose-500/10 group-hover:bg-rose-500/5 transition-colors duration-300" />
                 </div>
                 {/* Content */}
                 <div className="p-6">
-                  <div className="mb-4 p-3 bg-rose-50 rounded-lg w-fit group-hover:bg-rose-100 transition-colors">
-                    <Icon className="w-8 h-8 text-rose-500" />
+                  <div className="mb-4 p-3 bg-rose-50 rounded-lg w-fit group-hover:bg-rose-100 transition-colors duration-300">
+                    <Icon className="w-7 h-7 text-rose-500" />
                   </div>
                   <h3 className="text-xl font-bold text-light-900 mb-2">
                     {service.name}
                   </h3>
-                  <p className="text-light-600 mb-4">{service.description}</p>
-                  <p className="text-rose-600 font-semibold text-lg">
+                  <p className="text-sm text-light-600 mb-4">{service.description}</p>
+                  <p className="text-rose-500 font-semibold text-lg">
                     {service.price}
                   </p>
                 </div>
