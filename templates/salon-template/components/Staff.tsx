@@ -27,7 +27,7 @@ const staff = [
     name: 'Ava Johnson',
     specialty: 'Consultora de Beleza',
     bio: 'Especialista em cuidados de pele e consultoria de beleza',
-    image: 'https://images.unsplash.com/photo-1517411901427-2e0b2a55b846?w=400&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1517046913197-7d4c28c8e91b?w=400&h=400&fit=crop',
     rating: 4.8,
   },
 ]

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
   Sparkles,
   Palette,
@@ -13,36 +14,42 @@ const services = [
     name: 'Manicure',
     description: 'Cuidado e design elegante das unhas',
     price: '35€',
+    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&h=300&fit=crop',
   },
   {
     icon: Waves,
     name: 'Pedicure',
     description: 'Cuidado relaxante dos pés e nail art',
     price: '45€',
+    image: 'https://images.unsplash.com/photo-1552087405-20bcad00228b?w=400&h=300&fit=crop',
   },
   {
     icon: Wind,
     name: 'Penteado',
     description: 'Cortes e penteados profissionais',
     price: '60€',
+    image: 'https://images.unsplash.com/photo-1563212388-319f694cab57?w=400&h=300&fit=crop',
   },
   {
     icon: Palette,
     name: 'Nail Art',
     description: 'Designs criativos e personalizados de unhas',
     price: '50€',
+    image: 'https://images.unsplash.com/photo-1544161515-81e8b1dd2a4f?w=400&h=300&fit=crop',
   },
   {
     icon: Zap,
     name: 'Tratamento Spa',
     description: 'Tratamentos rejuvenescedores de corpo e rosto',
     price: '85€',
+    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&h=300&fit=crop',
   },
   {
     icon: HeartHandshake,
     name: 'Massagem',
     description: 'Massagem terapêutica de relaxamento',
     price: '70€',
+    image: 'https://images.unsplash.com/photo-1552087405-20bcad00228b?w=400&h=300&fit=crop',
   },
 ]
 
@@ -70,18 +77,32 @@ export function Services() {
             return (
               <div
                 key={index}
-                className="p-8 bg-white rounded-lg border border-rose-100 hover:border-rose-300 hover:shadow-lg transition-all duration-300 group"
+                className="bg-white rounded-lg border border-rose-100 hover:border-rose-300 hover:shadow-lg transition-all duration-300 group overflow-hidden"
               >
-                <div className="mb-4 p-3 bg-rose-50 rounded-lg w-fit group-hover:bg-rose-100 transition-colors">
-                  <Icon className="w-8 h-8 text-rose-500" />
+                {/* Service Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-rose-500/10 group-hover:bg-rose-500/5 transition-colors" />
                 </div>
-                <h3 className="text-xl font-bold text-light-900 mb-2">
-                  {service.name}
-                </h3>
-                <p className="text-light-600 mb-4">{service.description}</p>
-                <p className="text-rose-600 font-semibold text-lg">
-                  {service.price}
-                </p>
+                {/* Content */}
+                <div className="p-6">
+                  <div className="mb-4 p-3 bg-rose-50 rounded-lg w-fit group-hover:bg-rose-100 transition-colors">
+                    <Icon className="w-8 h-8 text-rose-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-light-900 mb-2">
+                    {service.name}
+                  </h3>
+                  <p className="text-light-600 mb-4">{service.description}</p>
+                  <p className="text-rose-600 font-semibold text-lg">
+                    {service.price}
+                  </p>
+                </div>
               </div>
             )
           })}

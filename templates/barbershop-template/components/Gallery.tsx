@@ -6,32 +6,32 @@ import { useState } from 'react'
 const galleryImages = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1599407839000-4c5f1134a268?w=600&h=600&fit=crop',
-    alt: 'Estilo de corte 1',
+    src: 'https://images.unsplash.com/photo-1585747860715-cd4628902d4a?w=500&h=400&fit=crop',
+    alt: 'Barbershop vintage',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=600&h=600&fit=crop',
-    alt: 'Estilo de corte 2',
+    src: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=500&h=400&fit=crop',
+    alt: 'Corte de cabelo profissional',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1605497788044-e4a10ae5c5a4?w=600&h=600&fit=crop',
+    src: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=500&h=400&fit=crop',
     alt: 'Aparo de barba',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1605328159405-b035a1a3e3b1?w=600&h=600&fit=crop',
-    alt: 'Serviço de penteado',
+    src: 'https://images.unsplash.com/photo-1562005555-c89fcb1e67c0?w=500&h=400&fit=crop',
+    alt: 'Styling profissional',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1599407839559-c2835db00ba7?w=600&h=600&fit=crop',
-    alt: 'Corte profissional',
+    src: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=500&h=400&fit=crop',
+    alt: 'Corte moderno',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1620331379026-1342b604fc6b?w=600&h=600&fit=crop',
+    src: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=500&h=400&fit=crop',
     alt: 'Barbear clássico',
   },
 ]

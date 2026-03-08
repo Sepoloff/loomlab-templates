@@ -6,39 +6,39 @@ import { useState } from 'react'
 const portfolioImages = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop',
-    alt: 'Design de unhas 1',
+    src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&h=400&fit=crop',
+    alt: 'Manicure elegante',
     category: 'Unhas',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1607779591378-361bfdfaed8f?w=600&h=600&fit=crop',
-    alt: 'Design de unhas 2',
+    src: 'https://images.unsplash.com/photo-1552087405-20bcad00228b?w=500&h=400&fit=crop',
+    alt: 'Pedicure e nail art',
     category: 'Unhas',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1596728322284-4ec344c28735?w=600&h=600&fit=crop',
-    alt: 'Penteado 1',
+    src: 'https://images.unsplash.com/photo-1563212388-319f694cab57?w=500&h=400&fit=crop',
+    alt: 'Penteado profissional',
     category: 'Cabelo',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1605328159405-b035a1a3e3b1?w=600&h=600&fit=crop',
-    alt: 'Penteado 2',
-    category: 'Cabelo',
+    src: 'https://images.unsplash.com/photo-1522929084246-ce4e7b7f6718?w=500&h=400&fit=crop',
+    alt: 'Beauty & wellness',
+    category: 'Bem-estar',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1596728322282-9b6b7f26d6c4?w=600&h=600&fit=crop',
-    alt: 'Antes e depois do tratamento',
+    src: 'https://images.unsplash.com/photo-1544161515-81e8b1dd2a4f?w=500&h=400&fit=crop',
+    alt: 'Tratamento relaxante',
     category: 'Tratamento',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1595777707802-41d339d60280?w=600&h=600&fit=crop',
-    alt: 'Spa e bem-estar',
-    category: 'Bem-estar',
+    src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&h=400&fit=crop',
+    alt: 'Nail art criativa',
+    category: 'Unhas',
   },
 ]
 

@@ -4,12 +4,13 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{
-          backgroundImage: 'url(data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 800%22%3E%3Crect fill=%22%231a1a1a%22 width=%221200%22 height=%22800%22/%3E%3Cdefs%3E%3ClinearGradient id=%22grad1%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22%3E%3Cstop offset=%220%25%22 style=%22stop-color:%23d4a574;stop-opacity:0.1%22 /%3E%3Cstop offset=%22100%25%22 style=%22stop-color:%2310b981;stop-opacity:0.1%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill=%22url(%23grad1)%22 width=%221200%22 height=%22800%22/%3E%3C/svg%3E)',
-        }}
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1585747860715-cd4628902d4a?w=1200&h=600&fit=crop"
+          alt="Barbershop background"
+          className="w-full h-full object-cover opacity-40"
+        />
+      </div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/40 to-dark-900/80" />

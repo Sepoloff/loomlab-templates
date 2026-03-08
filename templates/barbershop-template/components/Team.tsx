@@ -27,7 +27,7 @@ const team = [
     name: 'Alex Rivera',
     specialty: 'Coloração & Styling',
     bio: 'Especialista criativo em coloração capilar',
-    image: 'https://images.unsplash.com/photo-1507009750519-e21cc028cb29?w=400&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1519345291346-1f6a18511dad?w=400&h=400&fit=crop',
     rating: 4.9,
   },
 ]

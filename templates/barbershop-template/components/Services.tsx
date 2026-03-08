@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Scissors, Zap, Wind, Droplet, Sparkles, Palette } from 'lucide-react'
 
 const services = [
@@ -5,31 +6,37 @@ const services = [
     icon: Scissors,
     name: 'Corte de Cabelo',
     description: 'Cortes profissionais adaptados ao seu estilo e formato de rosto',
+    image: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=400&h=300&fit=crop',
   },
   {
     icon: Zap,
     name: 'Aparo de Barba',
     description: 'Cuidado e modelagem especialista de barba',
+    image: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=400&h=300&fit=crop',
   },
   {
     icon: Wind,
     name: 'Penteado',
     description: 'Estilos contemporâneos para qualquer ocasião',
+    image: 'https://images.unsplash.com/photo-1562005555-c89fcb1e67c0?w=400&h=300&fit=crop',
   },
   {
     icon: Droplet,
     name: 'Barbear Quente',
     description: 'Barbear clássico com produtos premium',
+    image: 'https://images.unsplash.com/photo-1585747860715-cd4628902d4a?w=400&h=300&fit=crop',
   },
   {
     icon: Sparkles,
     name: 'Lavagem de Cabelo',
     description: 'Lavagem relaxante com massagem ao couro cabeludo',
+    image: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=400&h=300&fit=crop',
   },
   {
     icon: Palette,
     name: 'Coloração',
     description: 'Coloração profissional e mechas',
+    image: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=400&h=300&fit=crop',
   },
 ]
 
@@ -57,13 +64,27 @@ export function Services() {
             return (
               <div
                 key={index}
-                className="p-8 bg-dark-900 rounded-lg border border-dark-700 hover:border-gold-500 transition-all duration-300 group"
+                className="bg-dark-900 rounded-lg border border-dark-700 hover:border-gold-500 transition-all duration-300 group overflow-hidden"
               >
-                <div className="mb-4 p-3 bg-gold-500/10 rounded-lg w-fit group-hover:bg-gold-500/20 transition-colors">
-                  <Icon className="w-8 h-8 text-gold-500" />
+                {/* Service Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-dark-900/30 group-hover:bg-dark-900/10 transition-colors" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{service.name}</h3>
-                <p className="text-dark-300">{service.description}</p>
+                {/* Content */}
+                <div className="p-6">
+                  <div className="mb-4 p-3 bg-gold-500/10 rounded-lg w-fit group-hover:bg-gold-500/20 transition-colors">
+                    <Icon className="w-8 h-8 text-gold-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">{service.name}</h3>
+                  <p className="text-dark-300">{service.description}</p>
+                </div>
               </div>
             )
           })}
