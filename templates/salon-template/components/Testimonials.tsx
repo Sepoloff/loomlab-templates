@@ -50,6 +50,9 @@ export function Testimonials() {
           <h2 className="text-4xl md:text-5xl font-bold text-light-900 mb-4">
             O Que Dizem As <span className="gradient-text">Nossas Clientes</span>
           </h2>
+          <p className="text-light-600 max-w-2xl mx-auto">
+            A satisfação das nossas clientes é a nossa maior recompensa.
+          </p>
         </div>
 
         {/* Testimonials Grid */}
@@ -57,39 +60,37 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="p-8 bg-white rounded-lg border border-rose-100 hover:border-rose-300 hover:shadow-lg transition-all duration-300"
+              className="relative p-8 bg-white rounded-xl border border-rose-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/10 transition-all duration-300 group"
             >
-              {/* Quote Icon */}
-              <Quote className="w-8 h-8 text-rose-200 mb-3" />
+              {/* Quote icon */}
+              <Quote className="w-10 h-10 text-rose-200 mb-4 group-hover:text-rose-300 transition-colors duration-300" />
 
               {/* Rating */}
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: Math.floor(testimonial.rating) }).map(
-                  (_, i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 fill-rose-500 text-rose-500"
-                    />
-                  )
-                )}
-                {testimonial.rating % 1 !== 0 && (
-                  <div className="relative w-5 h-5">
-                    <Star className="absolute w-5 h-5 text-light-300" />
-                    <div className="absolute overflow-hidden w-2.5 h-5">
-                      <Star className="w-5 h-5 fill-rose-500 text-rose-500" />
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: Math.floor(testimonial.rating) }).map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-rose-500 text-rose-500" />
+                  ))}
+                  {testimonial.rating % 1 !== 0 && (
+                    <div className="relative w-5 h-5">
+                      <Star className="absolute w-5 h-5 text-light-300" />
+                      <div className="absolute overflow-hidden w-2.5 h-5">
+                        <Star className="w-5 h-5 fill-rose-500 text-rose-500" />
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
+                <span className="text-rose-500 text-sm font-semibold">{testimonial.rating}/5</span>
               </div>
 
               {/* Content */}
-              <p className="text-light-700 mb-6 text-lg leading-relaxed">
-                "{testimonial.content}"
+              <p className="text-light-600 mb-6 text-base leading-relaxed italic">
+                &ldquo;{testimonial.content}&rdquo;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full overflow-hidden bg-rose-100">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-rose-100 ring-2 ring-rose-200 flex-shrink-0">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}

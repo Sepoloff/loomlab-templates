@@ -1,4 +1,4 @@
-import { Star } from 'lucide-react'
+import { Star, Quote } from 'lucide-react'
 
 const testimonials = [
   {
@@ -43,6 +43,9 @@ export function Testimonials() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             O Que Dizem Os <span className="gradient-text">Nossos Clientes</span>
           </h2>
+          <p className="text-dark-300 max-w-2xl mx-auto">
+            A opinião dos nossos clientes é o nosso maior orgulho.
+          </p>
         </div>
 
         {/* Testimonials Grid */}
@@ -50,31 +53,37 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="p-8 bg-dark-800 rounded-lg border border-dark-700 hover:border-gold-500 transition-all duration-300"
+              className="relative p-8 bg-dark-800 rounded-xl border border-dark-700 hover:border-gold-500/40 shadow-md hover:shadow-xl hover:shadow-gold-500/5 transition-all duration-300 group"
             >
+              {/* Quote icon */}
+              <Quote className="w-10 h-10 text-gold-500/20 mb-4 group-hover:text-gold-500/40 transition-colors duration-300" />
+
               {/* Rating */}
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: Math.floor(testimonial.rating) }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-gold-500 text-gold-500" />
-                ))}
-                {testimonial.rating % 1 !== 0 && (
-                  <div className="relative w-5 h-5">
-                    <Star className="absolute w-5 h-5 text-dark-600" />
-                    <div className="absolute overflow-hidden w-2.5 h-5">
-                      <Star className="w-5 h-5 fill-gold-500 text-gold-500" />
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: Math.floor(testimonial.rating) }).map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-gold-500 text-gold-500" />
+                  ))}
+                  {testimonial.rating % 1 !== 0 && (
+                    <div className="relative w-5 h-5">
+                      <Star className="absolute w-5 h-5 text-dark-600" />
+                      <div className="absolute overflow-hidden w-2.5 h-5">
+                        <Star className="w-5 h-5 fill-gold-500 text-gold-500" />
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
+                <span className="text-gold-500 text-sm font-semibold">{testimonial.rating}/5</span>
               </div>
 
               {/* Content */}
-              <p className="text-dark-200 mb-6 text-lg leading-relaxed">
-                "{testimonial.content}"
+              <p className="text-dark-200 mb-6 text-lg leading-relaxed italic">
+                &ldquo;{testimonial.content}&rdquo;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full overflow-hidden bg-dark-700">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-dark-700 ring-2 ring-gold-500/30 flex-shrink-0">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
