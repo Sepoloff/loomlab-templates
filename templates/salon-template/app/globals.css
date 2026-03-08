@@ -1,49 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-  --color-light-50: #fffbf7;
-  --color-light-100: #fdf4ec;
-  --color-light-200: #fbe8d8;
-  --color-light-300: #f5cba7;
-  --color-light-400: #ebb888;
-  --color-light-500: #d4a574;
-  --color-light-600: #a67c52;
-  --color-light-700: #7a5a38;
-  --color-light-800: #4f3a22;
-  --color-light-900: #2c1f11;
-  --color-light-950: #180e07;
-
-  --color-rose-50: #fff1f3;
-  --color-rose-100: #ffe4e8;
-  --color-rose-200: #fecdd6;
-  --color-rose-300: #fda4b4;
-  --color-rose-400: #fb7090;
-  --color-rose-500: #f43f6e;
-  --color-rose-600: #e11d52;
-  --color-rose-700: #be1244;
-  --color-rose-800: #9f1239;
-  --color-rose-900: #881337;
-  --color-rose-950: #4c0519;
-
-  --color-gold-50: #fdf9f3;
-  --color-gold-100: #fbf3e6;
-  --color-gold-300: #f4d9a1;
-  --color-gold-500: #d4a574;
-  --color-gold-700: #a67c52;
-  --color-gold-900: #6b4c2f;
-
-  --font-family-sans: system-ui, sans-serif;
-  --font-family-serif: Georgia, serif;
-
-  --animate-fadeIn: fadeIn 0.6s ease-in-out;
-  --animate-slideUp: slideUp 0.6s ease-out;
-
-  --keyframes-fadeIn-0%: { opacity: 0 };
-  --keyframes-fadeIn-100%: { opacity: 1 };
-
-  --keyframes-slideUp-0%: { transform: translateY(20px); opacity: 0 };
-  --keyframes-slideUp-100%: { transform: translateY(0); opacity: 1 };
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
