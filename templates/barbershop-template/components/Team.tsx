@@ -79,14 +79,12 @@ export function Team() {
                   <a
                     href={member.instagram}
                     className="bg-dark-900/80 backdrop-blur-sm p-2 rounded-full text-gold-500 hover:bg-gold-500 hover:text-dark-900 transition-colors shadow-md"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <Instagram className="w-4 h-4" />
                   </a>
                   <a
                     href={member.whatsapp}
                     className="bg-dark-900/80 backdrop-blur-sm p-2 rounded-full text-gold-500 hover:bg-gold-500 hover:text-dark-900 transition-colors shadow-md"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <MessageCircle className="w-4 h-4" />
                   </a>
