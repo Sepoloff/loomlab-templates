@@ -6,32 +6,32 @@ import { useState } from 'react'
 const galleryImages = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1585747860715-cd4628902d4a?w=500&h=400&fit=crop',
+    src: '/images/barbershop/gallery/gallery1.jpg',
     alt: 'Barbershop vintage',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=500&h=400&fit=crop',
+    src: '/images/barbershop/gallery/gallery2.jpg',
     alt: 'Corte de cabelo profissional',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=500&h=400&fit=crop',
+    src: '/images/barbershop/gallery/gallery3.jpg',
     alt: 'Aparo de barba',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1562005555-c89fcb1e67c0?w=500&h=400&fit=crop',
+    src: '/images/barbershop/gallery/gallery4.jpg',
     alt: 'Styling profissional',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=500&h=400&fit=crop',
+    src: '/images/barbershop/gallery/gallery5.jpg',
     alt: 'Corte moderno',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=500&h=400&fit=crop',
+    src: '/images/barbershop/gallery/gallery6.jpg',
     alt: 'Barbear clássico',
   },
 ]

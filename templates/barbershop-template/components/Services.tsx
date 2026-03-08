@@ -6,37 +6,37 @@ const services = [
     icon: Scissors,
     name: 'Corte de Cabelo',
     description: 'Cortes profissionais adaptados ao seu estilo e formato de rosto',
-    image: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=400&h=300&fit=crop',
+    image: '/images/barbershop/services/haircut.jpg',
   },
   {
     icon: Zap,
     name: 'Aparo de Barba',
     description: 'Cuidado e modelagem especialista de barba',
-    image: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=400&h=300&fit=crop',
+    image: '/images/barbershop/services/beard.jpg',
   },
   {
     icon: Wind,
     name: 'Penteado',
     description: 'Estilos contemporâneos para qualquer ocasião',
-    image: 'https://images.unsplash.com/photo-1562005555-c89fcb1e67c0?w=400&h=300&fit=crop',
+    image: '/images/barbershop/services/styling.jpg',
   },
   {
     icon: Droplet,
     name: 'Barbear Quente',
     description: 'Barbear clássico com produtos premium',
-    image: 'https://images.unsplash.com/photo-1585747860715-cd4628902d4a?w=400&h=300&fit=crop',
+    image: '/images/barbershop/services/shave.jpg',
   },
   {
     icon: Sparkles,
     name: 'Lavagem de Cabelo',
     description: 'Lavagem relaxante com massagem ao couro cabeludo',
-    image: 'https://images.unsplash.com/photo-1503387762996-74f5f009631e?w=400&h=300&fit=crop',
+    image: '/images/barbershop/services/wash.jpg',
   },
   {
     icon: Palette,
     name: 'Coloração',
     description: 'Coloração profissional e mechas',
-    image: 'https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=400&h=300&fit=crop',
+    image: '/images/barbershop/services/coloring.jpg',
   },
 ]
 

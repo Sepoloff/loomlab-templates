@@ -6,7 +6,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1585747860715-cd4628902d4a?w=1200&h=600&fit=crop"
+          src="/images/barbershop/hero.jpg"
           alt="Barbershop background"
           className="w-full h-full object-cover opacity-40"
         />

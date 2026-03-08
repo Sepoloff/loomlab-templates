@@ -6,37 +6,37 @@ import { useState } from 'react'
 const portfolioImages = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&h=400&fit=crop',
+    src: '/images/salon/portfolio/portfolio1.jpg',
     alt: 'Manicure elegante',
     category: 'Unhas',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1552087405-20bcad00228b?w=500&h=400&fit=crop',
+    src: '/images/salon/portfolio/portfolio2.jpg',
     alt: 'Pedicure e nail art',
     category: 'Unhas',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1563212388-319f694cab57?w=500&h=400&fit=crop',
+    src: '/images/salon/portfolio/portfolio3.jpg',
     alt: 'Penteado profissional',
     category: 'Cabelo',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1522929084246-ce4e7b7f6718?w=500&h=400&fit=crop',
+    src: '/images/salon/portfolio/portfolio4.jpg',
     alt: 'Beauty & wellness',
     category: 'Bem-estar',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1544161515-81e8b1dd2a4f?w=500&h=400&fit=crop',
+    src: '/images/salon/portfolio/portfolio5.jpg',
     alt: 'Tratamento relaxante',
     category: 'Tratamento',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&h=400&fit=crop',
+    src: '/images/salon/portfolio/portfolio6.jpg',
     alt: 'Nail art criativa',
     category: 'Unhas',
   },
