@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s ease;
+}
+
+.transition-slow {
+  transition: all 0.6s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a574;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c89664;
+}
+
+/* Button animations */
+.btn-hover {
+  @apply transition-smooth hover:scale-105 active:scale-95;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-rose-500 to-gold-500 bg-clip-text text-transparent;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glow effect */
+.glow-rose {
+  box-shadow: 0 0 20px rgba(255, 77, 148, 0.2);
+}
+
+.glow-rose:hover {
+  box-shadow: 0 0 30px rgba(255, 77, 148, 0.3);
+}
+
+/* Premium spa feel */
+.luxury-bg {
+  background: linear-gradient(135deg, rgba(255, 250, 240, 0.5) 0%, rgba(255, 232, 240, 0.3) 100%);
+}
