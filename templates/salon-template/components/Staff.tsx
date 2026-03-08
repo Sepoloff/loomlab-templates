@@ -79,14 +79,12 @@ export function Staff() {
                   <a
                     href={member.instagram}
                     className="bg-white/90 backdrop-blur-sm p-2 rounded-full text-rose-500 hover:bg-rose-500 hover:text-white transition-colors shadow-md"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <Instagram className="w-4 h-4" />
                   </a>
                   <a
                     href={member.whatsapp}
                     className="bg-white/90 backdrop-blur-sm p-2 rounded-full text-rose-500 hover:bg-rose-500 hover:text-white transition-colors shadow-md"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <MessageCircle className="w-4 h-4" />
                   </a>
