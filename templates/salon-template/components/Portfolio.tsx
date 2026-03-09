@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useState } from 'react'
 import { Search, X } from 'lucide-react'
 
@@ -54,6 +53,8 @@ export function Portfolio() {
       ? portfolioImages
       : portfolioImages.filter((img) => img.category === filter)
 
+  const selectedImage = portfolioImages.find((img) => img.id === selectedId)
+
   return (
     <section id="portfolio" className="py-20 bg-light-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,11 +97,10 @@ export function Portfolio() {
               onClick={() => setSelectedId(image.id)}
             >
               <div className="relative aspect-square overflow-hidden bg-rose-50">
-                <Image
+                <img
                   src={image.src}
                   alt={image.alt}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-rose-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -121,7 +121,7 @@ export function Portfolio() {
         </div>
 
         {/* Lightbox */}
-        {selectedId && (
+        {selectedId && selectedImage && (
           <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
             onClick={() => setSelectedId(null)}
@@ -134,15 +134,14 @@ export function Portfolio() {
             </button>
             <div className="max-w-3xl w-full" onClick={(e) => e.stopPropagation()}>
               <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src={portfolioImages.find((img) => img.id === selectedId)?.src || ''}
+                <img
+                  src={selectedImage.src}
                   alt="Imagem da galeria"
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <p className="text-white/70 text-center mt-4 text-sm">
-                {portfolioImages.find((img) => img.id === selectedId)?.alt}
+                {selectedImage.alt}
               </p>
             </div>
           </div>

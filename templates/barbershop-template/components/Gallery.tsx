@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useState } from 'react'
 import { Search, X } from 'lucide-react'
 
@@ -54,6 +53,8 @@ export function Gallery() {
       ? galleryImages
       : galleryImages.filter((img) => img.category === activeFilter)
 
+  const selectedImage = galleryImages.find((img) => img.id === selectedId)
+
   return (
     <section id="gallery" className="py-20 bg-dark-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,11 +97,10 @@ export function Gallery() {
               onClick={() => setSelectedId(image.id)}
             >
               <div className="relative aspect-square overflow-hidden bg-dark-800">
-                <Image
+                <img
                   src={image.src}
                   alt={image.alt}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 {/* Dark overlay */}
                 <div className="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -121,7 +121,7 @@ export function Gallery() {
         </div>
 
         {/* Lightbox */}
-        {selectedId && (
+        {selectedId && selectedImage && (
           <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
             onClick={() => setSelectedId(null)}
@@ -134,15 +134,14 @@ export function Gallery() {
             </button>
             <div className="max-w-3xl w-full" onClick={(e) => e.stopPropagation()}>
               <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src={galleryImages.find((img) => img.id === selectedId)?.src || ''}
+                <img
+                  src={selectedImage.src}
                   alt="Imagem da galeria"
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <p className="text-dark-300 text-center mt-4 text-sm">
-                {galleryImages.find((img) => img.id === selectedId)?.alt}
+                {selectedImage.alt}
               </p>
             </div>
           </div>
