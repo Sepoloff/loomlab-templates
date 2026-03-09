@@ -27,7 +27,7 @@ export function Footer() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {/* Map */}
           <div className="rounded-xl overflow-hidden h-96 border border-rose-200 shadow-md">
             <iframe
@@ -121,7 +121,7 @@ export function Footer() {
       {/* Footer */}
       <div className="border-t border-rose-200 mt-16 pt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
             <div>
               <h3 className="text-2xl font-bold gradient-text mb-4">

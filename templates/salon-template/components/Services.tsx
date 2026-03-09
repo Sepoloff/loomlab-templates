@@ -71,13 +71,13 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl border border-rose-100 shadow-md hover:border-rose-300/60 hover:scale-105 hover:shadow-2xl hover:shadow-rose-500/10 transition-all duration-300 group overflow-hidden cursor-pointer"
+                className="bg-white rounded-xl border border-rose-100 shadow-md hover:border-rose-300/60 hover:-translate-y-1 hover:shadow-2xl hover:shadow-rose-500/10 transition-all duration-300 group overflow-hidden cursor-pointer"
               >
                 {/* Service Image */}
                 <div className="relative h-56 overflow-hidden rounded-t-xl">

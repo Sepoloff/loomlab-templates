@@ -28,7 +28,7 @@ export function Location() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {/* Map */}
           <div className="rounded-xl overflow-hidden h-96 border border-dark-700 shadow-lg">
             <iframe

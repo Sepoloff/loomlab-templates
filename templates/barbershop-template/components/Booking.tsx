@@ -78,7 +78,7 @@ export function Booking() {
         </div>
 
         {/* Form */}
-        <div className="bg-dark-900 rounded-2xl p-8 border border-dark-700 shadow-2xl">
+        <div className="bg-dark-900 rounded-2xl p-5 sm:p-8 border border-dark-700 shadow-2xl">
           {submitted ? (
             /* Success State */
             <div className="flex flex-col items-center justify-center py-12 text-center">

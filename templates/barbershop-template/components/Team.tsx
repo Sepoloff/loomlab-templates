@@ -58,11 +58,11 @@ export function Team() {
         </div>
 
         {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {team.map((member, index) => (
             <div
               key={index}
-              className="group bg-dark-900 rounded-xl overflow-hidden border border-gold-500/20 shadow-lg hover:shadow-xl hover:shadow-gold-500/10 hover:scale-105 hover:border-gold-500/40 transition-all duration-300"
+              className="group bg-dark-900 rounded-xl overflow-hidden border border-gold-500/20 shadow-lg hover:shadow-xl hover:shadow-gold-500/10 hover:-translate-y-1 hover:border-gold-500/40 transition-all duration-300"
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden">

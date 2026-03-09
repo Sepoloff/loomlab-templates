@@ -45,7 +45,7 @@ export function SpecialOffers() {
         </div>
 
         {/* Offers Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {offers.map((offer, index) => (
             <div
               key={index}
@@ -105,7 +105,7 @@ export function SpecialOffers() {
           <p className="text-light-600 max-w-2xl mx-auto mb-6">
             Torne-se membro e desfrute de descontos exclusivos, acesso antecipado a novos serviços e mimos especiais no seu aniversário.
           </p>
-          <button className="bg-rose-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-rose-600 transition-colors">
+          <button className="inline-flex items-center justify-center bg-rose-500 text-white px-8 py-3.5 min-h-[48px] rounded-lg font-semibold hover:bg-rose-600 hover:shadow-lg hover:shadow-rose-500/30 transition-all duration-300 active:scale-[0.98]">
             Inscreva-se Hoje
           </button>
         </div>

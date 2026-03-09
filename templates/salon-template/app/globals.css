@@ -28,8 +28,8 @@ body {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -38,7 +38,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #f43f6e;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -55,40 +55,56 @@ body {
   @apply bg-gradient-to-r from-rose-500 to-gold-500 bg-clip-text text-transparent;
 }
 
-/* Fade in animation */
+/* ── Keyframe animations ──────────────────────────────── */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
-/* Slide up animation */
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Glow effect */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.3); }
+  50%  { opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+/* ── Utility animation classes ───────────────────────── */
+.animate-fade-in       { animation: fadeIn 0.6s ease-in-out both; }
+.animate-slide-up      { animation: slideUp 0.6s ease-out both; }
+.animate-slide-in-left { animation: slideInLeft 0.8s ease-out both; }
+.animate-slide-in-right{ animation: slideInRight 0.8s ease-out both; }
+.animate-bounce-in     { animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+
+/* ── Glow effects ─────────────────────────────────────── */
 .glow-rose {
   box-shadow: 0 0 20px rgba(244, 63, 110, 0.2);
 }
-
 .glow-rose:hover {
   box-shadow: 0 0 30px rgba(244, 63, 110, 0.3);
 }
 
 /* Card hover utility */
 .card-hover {
-  @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl;
+  @apply transition-all duration-300 ease-in-out hover:scale-[1.03] hover:shadow-2xl;
 }
 
 /* Glow effect on hover */
@@ -101,95 +117,94 @@ body {
   @apply hover:shadow-[0_0_30px_rgba(212,165,116,0.4)];
 }
 
-/* Additional animations */
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-/* Utility animations */
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-in-out;
-}
-
-.animate-slide-up {
-  animation: slideUp 0.6s ease-out;
-}
-
-.animate-slide-in-left {
-  animation: slideInLeft 0.8s ease-out;
-}
-
-.animate-slide-in-right {
-  animation: slideInRight 0.8s ease-out;
-}
-
-.animate-bounce-in {
-  animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-/* Smooth page transitions */
+/* ── Smooth page transitions ──────────────────────────── */
 .page-transition {
   @apply transition-opacity duration-500;
 }
 
-/* Better focus states */
+/* ── Focus states (accessibility) ────────────────────── */
 :focus-visible {
-  @apply outline-2 outline-offset-2 outline-rose-500;
+  outline: 2px solid #f43f6e;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
-button:focus-visible {
-  @apply outline-2 outline-offset-2 outline-rose-500;
-}
-
+button:focus-visible,
 a:focus-visible {
-  @apply outline-2 outline-offset-2 outline-rose-500 rounded;
+  outline: 2px solid #f43f6e;
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
-/* Text selection styling */
+/* ── Form input enhanced focus glow ─────────────────── */
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgba(244, 63, 110, 0.1), 0 0 12px rgba(244, 63, 110, 0.08);
+}
+
+/* ── Text selection ──────────────────────────────────── */
 ::selection {
-  @apply bg-rose-500 text-white;
+  background: #f43f6e;
+  color: white;
 }
 
-/* Placeholder styling */
+/* ── Placeholder ─────────────────────────────────────── */
 ::placeholder {
-  @apply text-light-400;
+  color: #b4b4b4;
+  opacity: 1;
 }
 
-/* Disabled states */
+/* ── Disabled ─────────────────────────────────────────── */
 :disabled {
-  @apply opacity-50 cursor-not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-/* Premium spa feel */
+/* ── Mobile nav slide animation ──────────────────────── */
+.mobile-nav-enter {
+  animation: mobileNavIn 0.25s ease-out both;
+}
+
+@keyframes mobileNavIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Touch-friendly minimum sizes ───────────────────── */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* ── Hover lift on cards ─────────────────────────────── */
+.hover-lift {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+}
+
+/* ── Premium spa feel ────────────────────────────────── */
 .luxury-bg {
   background: linear-gradient(135deg, rgba(255, 250, 240, 0.5) 0%, rgba(255, 232, 240, 0.3) 100%);
+}
+
+/* ── Content visibility for off-screen sections ─────── */
+.content-below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* ── Reduce motion for accessibility ─────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }

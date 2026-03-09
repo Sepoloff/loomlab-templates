@@ -58,11 +58,11 @@ export function Staff() {
         </div>
 
         {/* Staff Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {staff.map((member, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl overflow-hidden border border-rose-100 shadow-md hover:shadow-xl hover:shadow-rose-500/10 hover:scale-105 hover:border-rose-300 transition-all duration-300"
+              className="group bg-white rounded-xl overflow-hidden border border-rose-100 shadow-md hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 hover:border-rose-300 transition-all duration-300"
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden">

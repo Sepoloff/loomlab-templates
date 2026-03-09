@@ -71,12 +71,12 @@ export function Gallery() {
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-3 mb-10 flex-wrap">
+        <div className="flex justify-center gap-2 sm:gap-3 mb-10 flex-wrap">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+              className={`px-4 sm:px-5 py-2.5 min-h-[44px] rounded-full text-sm font-semibold transition-all duration-300 ${
                 activeFilter === cat
                   ? 'bg-gold-500 text-dark-900 shadow-lg shadow-gold-500/30'
                   : 'bg-dark-800 text-dark-300 border border-dark-700 hover:border-gold-500 hover:text-gold-500'
@@ -88,7 +88,7 @@ export function Gallery() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filtered.map((image) => (
             <div
               key={image.id}

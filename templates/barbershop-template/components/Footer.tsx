@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="bg-dark-950 border-t border-dark-800 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold gradient-text mb-4">Barbearia Premium</h3>
